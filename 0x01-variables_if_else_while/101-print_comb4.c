@@ -17,7 +17,7 @@ int main(void)
 				continue;
 			for (b = 0; b <= 9; b++)
 			{
-				if (b <= a )
+				if (b <= a)
 					continue;
 				putchar(c + '0');
 				putchar(a + '0');

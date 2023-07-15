@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-	int c, a, b;
+	int c, a;
 
 	for (c = 0; c <= 99; c++)
 	{

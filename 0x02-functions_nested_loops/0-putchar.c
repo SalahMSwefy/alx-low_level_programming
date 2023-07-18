@@ -8,8 +8,13 @@
  */
 int main(void)
 {
-	
-	printf("_putchar\n");
+	string s = "_putchar";
+
+	for (int i = 0; i < s.size(); i++)
+	{
+		_putchar(s[i]);
+	}
+
+	_putchar('\n');
 	return (0);
 }
-

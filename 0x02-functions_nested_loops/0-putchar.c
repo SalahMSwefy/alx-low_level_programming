@@ -5,9 +5,9 @@
  */
 int main(void)
 {
-	string s = "_putchar";
+	char s[] = "_putchar";
 
-	for (int i = 0; i < s.size(); i++)
+	for (int i = 0; i < 8; i++)
 	{
 		_putchar(s[i]);
 	}

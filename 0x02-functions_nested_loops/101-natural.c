@@ -6,7 +6,7 @@
  *followed by a new line.
  *Return: no return
  */
-int natural(void)
+int _start(void)
 {
 	int i, x;
 	x = 0;

@@ -11,21 +11,20 @@ void print_times_table(int n)
 	{
 		for (j = 0; j <= n; j++)
 		{
-			if (j != 0)
-			{
-				int frist = (i * j) / 100;
-				int sec = frist % 10;
-				int last = (i * j) % 10;
-				if (frist)
-					_putchar(frist + '0');
-				else
-					_putchar(' ');
-				if (!frist && !sec)
-					_putchar(' ');
-				else
-					_putchar(sec + '0');
-				_putchar(last + '0');
-			}
+
+			int frist = (i * j) / 100;
+			int sec = frist % 10;
+			int last = (i * j) % 10;
+
+			if (frist)
+				_putchar(frist + '0');
+			else
+				_putchar(' ');
+			if (!frist && !sec)
+				_putchar(' ');
+			else
+				_putchar(sec + '0');
+			_putchar(last + '0');
 			if (j != n)
 			{
 				_putchar(',');

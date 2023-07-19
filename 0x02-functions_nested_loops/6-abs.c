@@ -1,11 +1,22 @@
 #include "main.h"
 /**
- *_abs - print the absolute value of i
- *@i: is an integer
+ *_abs - print the absolute value of n
+ *@n: is an integer
  *Return: return 0 
  */
-int _abs(int i)
+int _abs(int n)
 {
-	i=abs(i);
-	return (i);
+	
+     if (n > 0)
+	{
+		return (n);
+	}
+	else if (n < 0)
+	{
+		return (-n);
+	}
+	else
+	{
+		return (0);
+	}
 }

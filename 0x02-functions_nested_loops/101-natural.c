@@ -6,7 +6,7 @@
  *followed by a new line.
  *Return: no return
  */
-int _start(void)
+int main(void)
 {
 	int i, x;
 	x = 0;
@@ -15,5 +15,6 @@ int _start(void)
 		if (i % 3 == 0 || i % 5 == 0)
 			x += i;
 	}
-	return (x);
+	printf("%d\n",x);
+	return (0);
 }

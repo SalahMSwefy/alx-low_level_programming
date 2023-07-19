@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_print_sign - print the sign of n
+ *print_sign - print the sign of n and print n 
  *@n: is an integer
  *Return: return 0 or 1 or -1
  */
@@ -21,4 +21,4 @@ int print_sign(int n)
 		_putchar('0');
 		return (0);
 	}
-}
+

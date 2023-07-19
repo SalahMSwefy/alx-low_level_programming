@@ -2,12 +2,11 @@
 /**
  *_abs - print the absolute value of n
  *@n: is an integer
- *Return: return 0 
+ *Return: return 0
  */
 int _abs(int n)
 {
-	
-     if (n > 0)
+	if (n > 0)
 	{
 		return (n);
 	}

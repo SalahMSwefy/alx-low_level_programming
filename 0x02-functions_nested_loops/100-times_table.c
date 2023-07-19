@@ -19,12 +19,18 @@ void print_times_table(int n)
 			if (frist)
 				_putchar(frist + '0');
 			else
+			{
+				if (j != 0)
 				_putchar(' ');
+			}
 			if (!frist && !sec)
-				_putchar(' ');
+			{
+					if (j != 0)
+					_putchar(' ');
+			}
 			else
 				_putchar(sec + '0');
-			_putchar(last + '0');
+			    _putchar(last + '0');
 			if (j != n)
 			{
 				_putchar(',');

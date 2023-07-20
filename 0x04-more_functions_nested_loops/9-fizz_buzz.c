@@ -2,9 +2,10 @@
 #include <stdio.h>
 /**
  *main - prints the numbers from 1 to 100
+ *or fizz or buzz or fizzBuzz
  *Return:returns 0
  */
- int main(void)
+int main(void)
 {
 	int i;
 

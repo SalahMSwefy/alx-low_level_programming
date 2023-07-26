@@ -5,6 +5,7 @@
  *it will use at most n bytes from src
  *@dest: is a string
  *@src: is a string
+ *@n:This is the number of bytes to copy
  *Return:return string
  */
 char *_strncat(char *dest, char *src, int n)
@@ -25,5 +26,5 @@ char *_strncat(char *dest, char *src, int n)
 	if (n > j)
 		dest[i] = 0;
 
-	return (dest);
+	return(dest);
 }

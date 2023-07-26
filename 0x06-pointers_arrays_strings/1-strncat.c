@@ -21,6 +21,8 @@ char *_strncat(char *dest, char *src, int n)
 		j++;
 		i++;
 	}
+	if (n == 0)
+		dest[i] = 0;
 
 	return (dest);
 }

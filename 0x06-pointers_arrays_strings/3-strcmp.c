@@ -22,6 +22,6 @@ char *_strcmp(char *s1, char *s2)
 
     if (i == j)
         return (0);
-    else
+        
         return (*s1 - *s2);
 }

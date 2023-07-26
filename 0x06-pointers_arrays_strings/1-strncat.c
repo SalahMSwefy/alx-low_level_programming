@@ -2,6 +2,7 @@
 
 /**
  **_strncat -a function that concatenates two strings.
+ *it will use at most n bytes from src
  *@dest: is a string
  *@src: is a string
  *Return:return string

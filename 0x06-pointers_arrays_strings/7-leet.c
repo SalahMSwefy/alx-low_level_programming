@@ -8,19 +8,20 @@
 
 char *leet(char *s)
 {
-	int i, j, c;
+	int i, j;
 
-	char chars[] = {'A', 'E', 'O', 'T', 'L', '4', '3', '0', '7', '1'};
+	char small[] = {'a', 'e', 'o', 't', 'l'};
+	char capital[] = {'A', 'E', 'O', 'T', 'L'};
+	char num[] = {'4', '3', '0', '7', '1'};
 
 	for (i = 0; s[i] != 0; i++)
 	{
-		c = s[i] - 32;
 
 		for (j = 0; j < 5; j++)
 		{
-			if (c == chars[j])
+			if (s[i] == small[j] || s[i] == capital[j])
 			{
-				s[i] = chars[j + 5];
+				s[i] = num[j];
 			}
 		}
 	}

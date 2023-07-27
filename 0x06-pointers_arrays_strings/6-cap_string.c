@@ -19,6 +19,7 @@ char *cap_string(char *s)
 	{
 		if (s[i] >= 'a' && s[i] <= 'z')
 			s[i] = s[i] - dif;
+		dif = 0;
 		for (j = 0; j < 14; j++)
 		{
 			if (s[i] == chars[j])

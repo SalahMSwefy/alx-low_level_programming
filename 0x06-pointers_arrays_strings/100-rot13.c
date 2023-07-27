@@ -20,6 +20,7 @@ char *rot13(char *s)
 			if (s[i] == real[j])
 			{
 				s[i] = rot[j];
+				break;
 			}
 		}
 	}

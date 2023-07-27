@@ -6,7 +6,7 @@
  * @s: This is the input string
  * Return: Lowercase changed to uppercase of the string
  */
- 
+
 char *string_toupper(char *s)
 {
 	int i;
@@ -16,6 +16,6 @@ char *string_toupper(char *s)
 		if (s[i] >= 97 && s[i] <= 122)
 			s[i] = s[i] - 32;
 	}
-	
+
 	return (s);
 }

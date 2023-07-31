@@ -11,17 +11,18 @@ char *_strstr(char *haystack, char *needle)
 {
 	unsigned int i, j;
 
-	char *frist;
+	char *s;
 	for (i = 0; haystack[i] != 0; i++)
 	{
-		frist = haystack;
+		j = 0;
+		s = &haystack[i];
 		while (haystack[i] == needle[j])
 		{
 			i++;
 			j++;
 		}
 		if (needle[j] == 0)
-			return (frist);
+			return (s);
 	}
 	return (0);
 }

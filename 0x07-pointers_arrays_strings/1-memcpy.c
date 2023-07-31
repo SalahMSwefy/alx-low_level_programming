@@ -4,11 +4,9 @@
  *_memcpy - a function that fills memory with a constant byte.
  *The _memcpy() function copies n bytes from memory area src
  *to memory area dest
- *
  *@src: array to copy
  *@dest: the copied array
  *@n: the number of bytes
- *
  *Return: pointer to array dest
  */
 

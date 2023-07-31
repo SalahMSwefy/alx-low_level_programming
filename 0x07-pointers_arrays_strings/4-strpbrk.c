@@ -7,7 +7,7 @@
  *Return: return pointer to the character or null if not
  */
 
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	unsigned int i, j;
 

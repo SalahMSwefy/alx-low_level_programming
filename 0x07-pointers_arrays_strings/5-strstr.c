@@ -1,9 +1,9 @@
 #include "main.h"
 
 /**
- *_strstr - a function that searches a string for any of a set of bytes.
- *@s: input string
- *@accept: string to check
+ *_strstr -  a function that locates a substring.
+ *@haystack: the input string
+ *@needle: a string to check
  *Return: return pointer to the character or null if not
  */
 

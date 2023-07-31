@@ -4,7 +4,7 @@
  *_strchr - a function that locates a character in a string.
  *@s: string
  *@c: character
- *Return: pointer or null
+ *Return: return pointer to the character or null if not
  */
 
 char *_strchr(char *s, char c)

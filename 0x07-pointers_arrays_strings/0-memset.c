@@ -2,6 +2,8 @@
 
 /**
  *_memset - a function that fills memory with a constant byte.
+ *The _memset() function fills the first n bytes of the memory area 
+ *pointed to by s with the constant byte b
  *@s: array to fiil
  *@b: the constant byte which we fiils the memory wihe it
  *@n: the number of bytes
@@ -17,5 +19,5 @@ char *_memset(char *s, char b, unsigned int n)
 		s[i] = b;
 	}
 
-	return (s);
+	return(s);
 }

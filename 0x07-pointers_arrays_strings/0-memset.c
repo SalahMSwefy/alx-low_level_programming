@@ -7,7 +7,7 @@
  *@s: array to fiil
  *@b: the constant byte which we fiils the memory wihe it
  *@n: the number of bytes
- *return: pointer to array s
+ *Return: pointer to array s
  */
 
 char *_memset(char *s, char b, unsigned int n)

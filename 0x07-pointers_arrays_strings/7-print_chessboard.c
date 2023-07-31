@@ -2,21 +2,20 @@
 
 /**
  *_strstr - a function that prints the chessboard.
- *@a: the input string to print
- *Return: nothing
+ *@a: the chessboard to print
  */
 
-void print_chessboard(char (*a)[8])
+void print_chessboard(char(*a)[8])
 {
-    unsigned int i, j;
+	unsigned int i, j;
 
-    for (i = 0; i < 8; i++)
-    {
-        for (j = 0; j < 8; j++)
-        {
-            _putchar(a[i][j]);
-        }
+	for (i = 0; i < 8; i++)
+	{
+		for (j = 0; j < 8; j++)
+		{
+			_putchar(a[i][j]);
+		}
 
-        _putchar(10);
-    }
+		_putchar(10);
+	}
 }

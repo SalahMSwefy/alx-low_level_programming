@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - that multiplies two numbers.
  * @argc: number of command line arguments.
@@ -8,6 +9,7 @@
 int main(int argc, char *argv[])
 {
     int i, mal = 1;
+
     if (argc == 3)
     {
         for (i = 1; i < argc; i++)

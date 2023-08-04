@@ -21,7 +21,7 @@ int _sqrt_recursion(int n)
  *@i: iterator
  *Return: the natural square root of a number, otherwise return -1.
  */
- 
+
 int _sqrt(int n, int i)
 {
 	if (i * i > n)

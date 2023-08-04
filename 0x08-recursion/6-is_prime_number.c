@@ -31,5 +31,5 @@ int _prime(int n, int i)
 	{
 		return (0);
 	}
-	return (_sqrt(n, i - 1));
+	return (_prime(n, i - 1));
 }

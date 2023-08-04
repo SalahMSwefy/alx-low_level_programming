@@ -25,9 +25,9 @@ int is_prime_number(int n)
 
 int _prime(int n, int i)
 {
-	if (n == 1)
+	if (i == 1)
 		return (1);
-	if (n > 0 && n % i == 0)
+	if (i > 0 && n % i == 0)
 	{
 		return (0);
 	}

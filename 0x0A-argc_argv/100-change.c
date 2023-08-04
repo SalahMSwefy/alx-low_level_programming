@@ -20,7 +20,7 @@ int main(int argc, char *argv[])
     money = atoi(argv[1]);
     if (money < 0)
     {
-        print("0");
+        printf("0\n");
         return (0);
     }
     res += money / 25;

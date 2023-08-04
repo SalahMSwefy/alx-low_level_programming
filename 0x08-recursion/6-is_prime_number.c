@@ -3,7 +3,7 @@
 int _prime(int n, int i);
 
 /**
- *_pow_recursion - a function that returns 1 if the input integer is
+ *is_prime_number - a function that returns 1 if the input integer is
  *a prime number, otherwise return 0.
  *@n: the input number
  *Return: 1 if the input integer is a prime number, otherwise return 0.

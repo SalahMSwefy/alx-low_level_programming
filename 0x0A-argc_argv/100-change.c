@@ -18,6 +18,11 @@ int main(int argc, char *argv[])
     }
 
     money = atoi(argv[1]);
+    if (money < 0)
+    {
+        print("0");
+        return (0);
+    }
     res += money / 25;
     money %= 25;
     res += money / 10;

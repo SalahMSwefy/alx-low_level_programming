@@ -14,9 +14,12 @@ char *create_array(unsigned int size, char c)
 	unsigned int i;
 	char *arr;
 
-	if (size == 0 || c == 0)
+	if (size == 0)
 		return (NULL);
-	arr = malloc(sizeof(c) * size);
+	arr = malloc(sizeof(c) *size);
+
+	if (arr == NULL)
+		return (NULL);
 
 	for (i = 0; i < size; i++)
 	{

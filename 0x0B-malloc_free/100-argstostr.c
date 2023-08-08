@@ -63,7 +63,6 @@ char *argstostr(int ac, char **av)
 	}
 
 	s = malloc(sizeof(char) * size);
-	f
 	for (i = 0; i < ac && av[i] != NULL; i++)
 	{
 		s = _strcat(s, av[i]);

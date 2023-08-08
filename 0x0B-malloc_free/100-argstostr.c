@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+
 /**
  **_strcat -a function that concatenates two strings.
  *@dest: is a string
@@ -24,6 +25,7 @@ char *_strcat(char *dest, char *src)
 
 	return (dest);
 }
+
 /**
  *_strlen -a function that return the length of a string.
  *@s: is a string
@@ -57,9 +59,10 @@ char *argstostr(int ac, char **av)
 
 	for (i = 0; i < ac && av[i] != NULL; i++)
 	{
-		size += _strlen(av[i]) + 1;
+		size += _strlen(av[i]);
 	}
-	s = malloc(sizeof(char) * size);
+
+	s = malloc(sizeof(char) * size + ac);
 	for (i = 0; i < ac && av[i] != NULL; i++)
 	{
 		s = _strcat(s, av[i]);

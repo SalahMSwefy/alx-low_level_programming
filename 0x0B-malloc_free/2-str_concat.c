@@ -14,14 +14,18 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, size1, size2;
 	char *arr;
 
-
 	size1 = size2 = 0;
+	if (s1 == NULL)
+		s1 == "";
+	if (s2 == NULL)
+		s2 == "";
+
 	while (s1[size1] != 0)
 		size1++;
 	while (s2[size2] != 0)
 		size2++;
 
-	arr = malloc(sizeof(char) * (size1 + size2 + 1));
+	arr = malloc(sizeof(char) *(size1 + size2 + 1));
 
 	if (arr == NULL)
 		return (NULL);

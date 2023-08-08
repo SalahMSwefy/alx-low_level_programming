@@ -14,8 +14,6 @@ char *str_concat(char *s1, char *s2)
 	unsigned int i, j, size1, size2;
 	char *arr;
 
-	if (s1 == NULL && s2 == NULL)
-		return (NULL);
 
 	size1 = size2 = 0;
 	while (s1[size1] != 0)

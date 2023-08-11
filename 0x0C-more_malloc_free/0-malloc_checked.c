@@ -1,8 +1,7 @@
 #include "main.h"
-#include <stdlib.h>
 
 /**
- *create_array -a function that allocates memory using malloc.
+ *malloc_checked -a function that allocates memory using malloc.
  *@b: the size of the allocated memory
  *Return: return pointer to the allocated memory
  */

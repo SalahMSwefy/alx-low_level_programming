@@ -32,14 +32,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (s1 == NULL)
 		return (NULL);
 
-	for (i = 0; i < size1; i++)
+	for (i = 0; i < size1 + n; i++)
 	{
-		arr[i] = s1[i];
-	}
-
-	for (j = size1; i < n + size1; i++, j++)
-	{
-		arr[i] = s2[j];
+		if (i < size1)
+			arr[i] = s1[i];
+		else
+			arr[i] = s2[i - size1];
 	}
 
 	arr[i] = 0;

@@ -24,12 +24,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		size1++;
 	while (s2[size2] != 0)
 		size2++;
-	if (n >= size2)
+	if (n > size2)
 		n = size2;
 
 	arr = malloc(size1 + n + 1);
 
-	if (s1 == NULL)
+	if (arr == NULL)
 		return (NULL);
 
 	for (i = 0; i < size1 + n; i++)

@@ -7,28 +7,33 @@
  */
 int _strlen(char *str)
 {
-	int len = 0;
+	int i = 0;
 
-	while (str)
-		len++;
+	while (s[i] != 0)
+	{
+		i++;
+	}
 
-	return (len);
+	return (i);
 }
 
 /**
- *_strcopy - copy string pointed by src into dest variable
- *@dest:buffer storing string copy
- *@src: buffer storing string to copy
- *Return:returns copied string
+ **_strcpy -a function that copies the string pointed
+ *@dest: is a string
+ *@src: is a string
+ *Return: no return
  */
-char *_strcopy(char *dest, char *src)
+char *_strcpy(char *dest, char *src)
 {
-	int index = 0;
+	int i = 0;
 
-	for (; src[index]; index++)
-		dest[index] = src[index];
+	while (src[i] != 0)
+	{
+		dest[i] = src[i];
+		i++;
+	}
+	dest[i] = 0;
 
-	dest[index] = '\0';
 	return (dest);
 }
 

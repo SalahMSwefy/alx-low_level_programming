@@ -25,14 +25,14 @@ int _strlen(char *str)
  */
 char *_strcpy(char *dest, char *src)
 {
-	int i = 0;
+	int x = 0;
 
-	while (src[i] != 0)
+	while (src[x] != 0)
 	{
-		dest[i] = src[i];
+		dest[x] = src[x];
 		i++;
 	}
-	dest[i] = 0;
+	dest[x] = 0;
 
 	return (dest);
 }

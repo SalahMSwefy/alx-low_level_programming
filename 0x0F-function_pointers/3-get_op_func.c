@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "3-op_functions.h"
+#include "3-calc.h"
 /**
  * get_op_func - that selects the correct function to perform the operation
  * asked by the user. You’re not allowed to declare any other function.

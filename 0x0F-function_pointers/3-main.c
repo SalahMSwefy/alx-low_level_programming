@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <stdio.h>
-#include "3-op_functions.h"
+#include "3-calc.h"
 
 /**
  *main - main function

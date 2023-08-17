@@ -22,7 +22,6 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 	else
 		s = (char*) separator;
 
-	if ()
 		for (i = 0; i < n; i++)
 		{
 			if (i == 0)

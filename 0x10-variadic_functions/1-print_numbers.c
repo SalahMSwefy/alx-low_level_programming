@@ -12,22 +12,22 @@
 
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	char *str;
+	char *s;
 	unsigned int i;
 	va_list num;
 
 	va_start(num, n);
 	if (separator == NULL || *separator == 0)
-		str = "";
+		s = "";
 	else
-		str = (char *) separator;
+		s = (char *) separator;
 	for (i = 0; i < n; i++)
 	{
 		if (i == n - 1)
 			printf("%d\n", va_arg(num, unsigned int));
 		else
 
-			printf("%d%s", va_arg(num, unsigned int), str);
+			printf("%d%s", va_arg(num, unsigned int), s);
 	}
 
 	va_end(num);

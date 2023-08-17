@@ -24,13 +24,13 @@ void print_all(const char *const format, ...)
 		switch (format[i])
 		{
 			case 'c':
-				printf("%c%s", va_arg(list, char), s);
+				printf("%c%s", va_arg(list, int), s);
 				break;
 			case 'i':
 				printf("%d%s", va_arg(list, int), s);
 				break;
 			case 'f':
-				printf("%f%s", va_arg(list, float), s);
+				printf("%f%s", va_arg(list, double), s);
 				break;
 			case 's':
 				str = va_arg(list, char *);

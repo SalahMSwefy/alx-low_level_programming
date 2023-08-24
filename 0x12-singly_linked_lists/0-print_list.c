@@ -20,7 +20,7 @@ size_t print_list(const list_t *h)
 		if (start->str != NULL)
 			printf("[%d] %s\n", start->len, start->str);
 		else
-			printf("[0] nil\n");
+			printf("[0] (nil)\n");
 		cnt++;
 		start = start->next;
 	}

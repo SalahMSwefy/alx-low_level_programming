@@ -1,12 +1,12 @@
 #include "lists.h"
 
 /**
- *pop_listint - a function that frees a listint_t list.
+ *free_listint2 - a function that frees a listint_t list.
  *@head: a pointer to the beginning of a listint_t list.
  *Return: nothing
  */
 
-int pop_listint(listint_t **head)
+void free_listint2(listint_t **head)
 {
 	listint_t *temp;
 

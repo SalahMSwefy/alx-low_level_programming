@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- *append_text_to_file - a function that reads a text file
- *and prints it to the POSIX standard output.
+ *append_text_to_file -  function that appends text at the end of a file.
  *@filename: a pointer to the name of file
  *@text_content: a string to read and print
- *Return: the actual number of letters it could read and print
+ *Return: 1 on success and -1 on failure
  */
 int append_text_to_file(const char *filename, char *text_content)
 {
@@ -16,7 +15,7 @@ int append_text_to_file(const char *filename, char *text_content)
 	while (text_content != NULL)
 		i++;
 
-	ofile = open(filename, O_CREAT | O_RDWR | O_TRUNC, 0600);
+	ofile = open(filename, O_WRONLY | O_APPEND);
 	wfile = write(STDOUT_FILENO, text_content, i);
 
 	if (ofile == -1 || wfile == -1)

@@ -1,0 +1,5 @@
+#!/bin/bash
+chmod a+x *
+git add .
+git commit -m "0x18-dynamic_libraries"
+git push
